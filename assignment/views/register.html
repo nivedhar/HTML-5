@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expedia Travel Agency</title>
+    <meta name="description" content="travel website">
+    <meta name="expedia" content="noindex">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/register.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../assets/lib/dist/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<header role="banner">
+    <figure class="logo">
+        <a href="">
+            <img src="../assets/images/logo.svg" alt="logo">
+        </a>
+    </figure>
+    <nav role="navigation" class="navBar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Deals</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+</header>
+<main role="main">
+    <hr>
+    <div role="application">
+        <section class="registerForm">
+            <h3>Register Form</h3>
+            <p id="desc">Please fill out the Form in order to get registered.</p>
+            <div class="container">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Register</legend>
+                            <label for="fname">Full Name </label>
+                            <input type="text" id="fname" name="fname" placeholder="John Michael" maxlength="100" autofocus required aria-required="true">
+
+                            <label for="email">Email </label>
+                            <input type="email" id="email" name="email" placeholder="john@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Please enter the proper valid email" maxlength="100" required aria-required="true">
+
+                            <label for="password">Password </label>
+                            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, lowercase letter, and at least 8 or more characters" autocomplete="off" required aria-required="true">
+
+                            <label for="c_password">Confirm Password </label>
+                            <input type="password" id="c_password" name="c_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, lowercase letter, and at least 8 or more characters" autocomplete="off" required aria-required="true">
+
+                            <label>Gender</label>
+                            <label class="radio"><input type="radio" name="gender" value="male" required>Male </label>
+                            <label class="radio"><input type="radio" name="gender" value="female">Female </label>
+
+                            <label for="phone">Phone Number </label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1555-555-5555" maxlength="14" required>
+
+                            <label for="age">Age </label>
+                            <input type="number" id="age" name="age">
+
+                            <label for="date">DOB </label>
+                            <input type="date" id="date" name="date" required>
+
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" maxlength="100">
+
+                            <label for="zipcode">Zip Code</label>
+                            <input type="text" id="zipcode" placeholder="55555" name="zipcode" size="5" maxlength="5">
+
+                            <label for="blog">Blog Url </label>
+                            <input type="url" id="blog" name="blog" pattern="https?://.+" title="Include http://" placeholder="http:// or https://">
+
+                            <label for="time">Pick a prime time to send you emails </label>
+                            <input type="time" id="time" name="time">
+
+                            <label for="upload">Upload your profile picture</label>
+                            <input type="file" name="upload" id="upload">
+
+                            <label for="zoom">Zoom Image</label>
+                            <input type="range" id="zoom" name="zoom" min="0" max="10">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Security Question</legend>
+                            <label for="month">Pick your birth Month </label>
+                            <input type="month" id="month" name="month">
+
+                            <label for="week">Pick your birth Week </label>
+                            <input type="week" id="week" name="week">
+
+                            <label for="color">Pick your favorite Color </label>
+                            <input type="color" id="color" name="color">
+                    </fieldset>
+                    <fieldset>
+                            <label class="radio">
+                                <input type="checkbox" name="policy" value="policy">
+                                Please send me Expedia.com emails with travel deals, special offers, and other information.
+                            </label>
+                            <label class="radio">
+                                <input type="checkbox" name="terms" value="terms" required>
+                                I have read and agree to the <a href="#" target="_blank"> Terms of Use</a> and the
+                                <a target="_blank" href="#">Privacy Policy</a>.
+                            </label>
+                    </fieldset>
+                    <input type="submit">
+                    <input type="reset" aria-label="reset">
+                </form>
+                <aside role="complementary" class="options">
+                    <p>Connect us in Facebook</p>
+                    <button>Connect to FB</button>
+                </aside>
+            </div>
+        </section>
+        <section class="mediaBlock">
+            <h3>Corporate Video</h3>
+            <video width="320" height="240" id="video" poster="../assets/images/logo.jpg" controls>
+                <source src="../assets/media/RoseWall.mp4" type="video/mp4">
+                <source src="../assets/media/RoseWall.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                <button onclick="document.getElementById('video').play()">Play</button>
+                <button onclick="document.getElementById('video').pause()">Pause</button>
+            </p>
+
+            <h3>Corporate Audio</h3>
+            <audio id="audio" controls>
+                <source src="../assets/media/Cabrobro.mp3" type="audio/mp3">
+                <source src="../assets/media/Cabrobro.ogv" type="audio/ogv">
+                Your browser does not support the audio element.
+            </audio>
+            <p>
+                <button onclick="document.getElementById('audio').play()">Play</button>
+                <button onclick="document.getElementById('audio').pause()">Pause</button>
+                <button onclick="document.getElementById('audio').volume+=0.1">Increase volume</button>
+                <button onclick="document.getElementById('audio').volume-=0.1">Decrease volume</button>
+            </p>
+        </section>
+    </div>
+</main>
+<footer role="contentinfo">
+    <hr>
+    <address> For more details, contact
+        <a href="mailto:expedia@example.com">Expedia</a>.
+    </address>
+    <p><small>Copyright &copy; 2016. All rights reserved</small></p>
+</footer>
+</body>
+</html>

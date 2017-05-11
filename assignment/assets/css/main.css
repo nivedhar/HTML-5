@@ -1,0 +1,30 @@
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    background-color: #fff;
+}
+header{
+    width: 100%;
+    height: 70px;
+}
+.logo{
+    float: left;
+}
+.navBar{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+.navBar li{
+    display: inline;
+}
+.navBar a{
+    color: #0065b8;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+}

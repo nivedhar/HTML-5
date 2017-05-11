@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 FORMS</title>
+    <meta name="description" content="learnng HTML">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <header>
+        <h1>Survey Form</h1>
+        <h2>Applying new elements</h2>
+        <hr>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">ABOUT</a>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Survey Form</h3>
+            <p>Please fill out the Form. We appreciate you time</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" autofocus autocomplete="off" required aria-required="true">
+                    <br><br>
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1555-555-5555" required pattern="[0-9]">
+                    <br><br>
+                    <label for="couponcode">Coupon Code: </label>
+                    <input type="text" id="couponcode" name="couponcode" placeholder="ABC-123" required pattern="[A-Z]{3}-[0-9]{3}" title="It must have 3 upper-case and 3 numbers!">
+                    <br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="website">Website Url: </label>
+                    <input type="url" id="website" name="website" placeholder="http:// or https://">
+                    <br><br>
+                    <label for="number">How many people will attend: </label>
+                    <input type="number" id="number" name="number">
+                    <br><br>
+                    <p><strong>Note: these do not work on FF, Safari or IE11</strong></p>
+                    <label for="date">Pick a Date: </label>
+                    <input type="date" id="date" name="date">
+                    <br><br>
+                    <label for="month">Pick a Month: </label>
+                    <input type="month" id="month" name="month">
+                    <br><br>
+                    <label for="week">Pick a Week: </label>
+                    <input type="week" id="week" name="week">
+                    <br><br>
+                    <label for="time">Pick a Time: </label>
+                    <input type="time" id="time" name="time">
+                    <br><br>
+                    <label for="color">Pick a Color: </label>
+                    <input type="color" id="color" name="color">
+                    <br><br>
+                    <label for="zipcode">zip Code: </label>
+                    <input type="text" id="zipcode" name="zipcode" size="5" maxlength="5">
+                    <br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    Age Group<br>
+                    <label><input type="radio" name="age" value="0-10">0-10 years old </label>
+                    <label><input type="radio" name="age" value="11-18">11-18 years old </label>
+                    <label><input type="radio" name="age" value="19-50">19-50 years old </label>
+                    <label><input type="radio" name="age" value="51up">51+ years old </label>
+                    <br><br>
+
+                    Favorite breakfast item:<br>
+                    <label><input type="checkbox" name="brkfst" value="bacon">Bacon</label>
+                    <label><input type="checkbox" name="brkfst" value="Eggs">Eggs</label>
+                    <label><input type="checkbox" name="brkfst" value="Pancakes">Pancakes</label>
+                    <br><br>
+
+                    <label for="upload">Upload your file</label>
+                    <input type="file" name="upload" id="upload" multiple>
+                    <br><br>
+                </fieldset>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><small>Copyright &copy; 2016. All rights reserved</small></p>
+    </footer>
+</body>
+</html>

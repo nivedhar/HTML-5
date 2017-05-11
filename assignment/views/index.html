@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expedia Travel Agency</title>
+    <meta name="description" content="travel website">
+    <meta name="expedia" content="noindex">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/index.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../assets/lib/dist/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+    <header role="banner">
+        <figure class="logo">
+            <a href="">
+                <img src="../assets/images/logo.svg" alt="logo">
+            </a>
+        </figure>
+        <nav role="navigation" class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Deals</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <div role="application">
+            <section class="bookingBlock">
+                <div class="wrapper">
+                    <nav role="navigation" class="sectionNavBar">
+                        <ul>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Flights</a></li>
+                        </ul>
+                    </nav>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Search Information</legend>
+                            <p>
+                                <label for="destination">Destination: </label>
+                                <input type="text" id="destination" aria-labelledby="destination" name="destination" autofocus required>
+                            </p>
+                            <p>
+                                <label for="checkin">Check In: </label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </p>
+                            <p>
+                                <label for="checkout">Check Out: </label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </p>
+                            <p>
+                                <label>Room count: </label>
+                                <select name="rooms" required>
+                                    <option value="">select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <input type="submit" id="submit" aria-label="submit">
+                    </form>
+                    <aside role="complementary" class="options">
+                        <ul>
+                            <li>Search over a million flights, hotels, packages, and more.</li>
+                            <li>Secure incredible value with Expedia’s <mark>Best Price Guarantee.</mark></li>
+                            <li>No Expedia cancellation fee to change or cancel almost any hotel reservation.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+            <section class="offersBlock">
+                <h2>Todays top deals!</h2>
+                <div class="offersTpl">
+                    <article class="offers">
+                        <h2>Offers</h2>
+                        <figure>
+                            <img src="../assets/images/article1.jpg" alt="article">
+                            <figcaption><small>Enjoy Your best offers!! Apply within <time datetime="2016-06">December</time></small></figcaption>
+                        </figure>
+                        <p><a href="#">View our offers for the best deal to enjoy</a></p>
+                    </article>
+                    <article class="offers">
+                        <h2>Snowy Gateway</h2>
+                        <figure>
+                            <img src="../assets/images/article2.jpg" alt="article">
+                            <figcaption><small>ski lovers Rejoice. Apply within <time datetime="2016-06">December</time></small></figcaption>
+                        </figure>
+                        <p><a href="#">Find excellent offers on snowy gateway</a></p>
+                    </article>
+                    <article class="offers">
+                        <h2>Fly Continents</h2>
+                        <figure>
+                            <img src="../assets/images/article3.jpg" alt="article">
+                            <figcaption><small>NYC Paris & more.. Apply within <time datetime="2016-06">December</time></small></figcaption>
+                        </figure>
+                        <p><a href="#">Shop for the season and save on your hotel</a></p>
+                    </article>
+                </div>
+                <div class="content">
+                    <p><b>Hotels</b></p>
+                    <p>Sydney Hotels Boston Hotels Walt Disney World Area Hotels Las Vegas Hotels Maui Hotels New York Hotels <i>San Francisco Hotels Grand Canyon Hotels London Hotels</i> Paris Hotels Cancun Hotels Playa Del Carmen Hotels +VIP Access Hotels</p>
+                    <p><b>Flights</b></p>
+                    <p>Flights to <i>New York Flights to Las Vegas Flights</i> to Los Angeles Flights to Orlando Flights to Miami Flights to San Francisco Flights to Chicago Flights to Boston Flights to Vancouver</p>
+                    <p><b>General</b></p>
+                    <p>Toronto Car Rental Vancouver Car Rental Denver Car Rental New York Car Rental Honolulu Car Rental Dallas Car Rental <i>New Orleans Car Rental Reno Car Rental San Antonio Car Rental</i></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <hr>
+        <address> For more details, contact
+            <a href="mailto:expedia@example.com">Expedia</a>.
+        </address>
+        <p><small>Copyright &copy; 2016. All rights reserved</small></p>
+    </footer>
+</body>
+</html>
